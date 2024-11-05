@@ -1,0 +1,8 @@
+# Usa la imagen oficial de Home Assistant
+FROM ghcr.io/home-assistant/home-assistant:stable
+
+# Expon el puerto por defecto de Home Assistant
+EXPOSE 8123
+
+# Comando para iniciar Home Assistant
+CMD ["python", "-m", "homeassistant", "--config", "/config"]
